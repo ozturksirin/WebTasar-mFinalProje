@@ -9,11 +9,12 @@ body {
 /* gri arka plan ve dolgu */
 .header {
   overflow: hidden;
-  background-color: #afe6f8;
+  background-color: rgb(48, 65, 65);
   padding: 20px 10px;
   position: fixed;
   top: 0;
   width: 100%;
+  opacity: 0.9;
 }
 
 /* başlık stilleri */
@@ -64,9 +65,10 @@ body {
 
 /* slider */
 .sliderResim {
+  margin-top: 4%;
   display: none;
   width: 100%;
-  height: 500px;
+  height: 750px;
   border-radius: 0.5%;
 }
 .slider-img {
@@ -83,29 +85,7 @@ body {
   background-position: center;
 }
 
-#imgP1 {
-  margin-top: 2px;
-  width: 35%;
-  height: 30%;
-  border-radius: 2%;
-  float: left;
-}
-
-#p1 {
-  margin-top: 2px;
-  width: 65%;
-  height: 30%;
-  border-radius: 2%;
-  float: right;
-  margin-left: 15px;
-  font-size: x-large;
-}
-#containerP {
-  display: flex;
-  /*justify-content: center;*/
-  align-items: center;
-}
-
+/* body bitiş*/
 .icon1 {
   width: 7%;
 }
@@ -114,52 +94,131 @@ body {
   text-align: center;
 }
 
-/* card css*/
-.card {
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.1),
-    rgba(255, 255, 255, 0.1)
-  );
-  backdrop-filter: blur(7px);
-  -webkit-backdrop-filter: blur(7px);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.36);
-  border-radius: 24px;
-  padding: 20px;
-}
-
-.card :where(h3, p) {
-  color: #ffffff;
-  text-align-last: center;
-  margin: 0;
-}
-
-.card h3 {
-  font-size: 35px;
-}
-
-.card p {
-  margin-top: 8px;
-  font-size: 18px;
-  color: #d1d1d1;
-}
-.card-arka {
-  background: url(./image/arkaplan_card.jpg);
-  border-radius: 6px;
-  width: 50%;
-  margin: auto;
-}
-/* card css finish*/
-
 /* footer css baslangic*/
 .footer {
-  left: 0;
   bottom: 0;
   width: 100%;
-  background-color: rgb(39, 40, 40);
+  background-color: rgb(48, 65, 65);
   color: white;
   text-align: center;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+
+li {
+  list-style-type: none;
+}
+.ozet {
+  display: flex;
+  justify-content: space-between;
+  background-color: #d2d2d2;
+}
+.container-ozet {
+  margin: auto;
+  text-align: center;
+  width: 100%;
+}
+.yazi-ozet p {
+  width: 500px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.baslik-ozet {
+  margin-top: -15px;
+  font-size: 20px;
+  text-align: center;
+  background-color: #d2d2d2;
+}
+.baslik-ozet hr {
+  width: 25%;
+  margin-left: 38%;
+  height: 2px;
+  border-radius: 2px;
+}
+
+/* kampanya css basla*/
+.kampanya-container {
+  position: relative;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /*background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);*/
+  background-image: url(/image/arkaplan_card.jpg);
+}
+
+.kampanya-card {
+  position: relative;
+  width: 300px;
+  height: 420px;
+  background-color: #fff;
+  margin: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+
+.kampanya-container:hover .kampanya-card {
+  filter: blur(15px);
+  transform: scale(0.9);
+  opacity: 0.5;
+}
+
+.kampanya-container .kampanya-card:hover {
+  filter: blur(0);
+  transform: scale(1);
+  opacity: 1;
+}
+
+.kampanya-daire {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  clip-path: circle(180px at center 0);
+  text-align: center;
+}
+
+.kampanya-baslik h2 {
+  color: #fff;
+  font-size: 2.5em;
+  padding: 30 px 0;
+}
+.kampanya-icerik {
+  position: absolute;
+  bottom: 10px;
+  padding: 20px;
+  text-align: center;
+}
+.kampanya-icerik p {
+  color: #666;
+}
+.kampanya-icerik a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  background: #000;
+  color: #fff;
+  border-radius: 40px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.kampanya-card:nth-child(1) .kampanya-daire,
+.kampanya-card:nth-child(1) .kampanya-icerik a {
+  background: #0b7992;
+}
+
+.kampanya-card:nth-child(2) .kampanya-daire,
+.kampanya-card:nth-child(2) .kampanya-icerik a {
+  background: #013541;
+}
+
+.kampanya-card:nth-child(3) .kampanya-daire,
+.kampanya-card:nth-child(3) .kampanya-icerik a {
+  background: #48706e;
 }
