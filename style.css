@@ -104,11 +104,18 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  font-size: larger;
 }
 
 li {
   list-style-type: none;
 }
+
+.footer i {
+  color: #fbfbfb;
+  font-size: 22px;
+}
+/*ozet basla*/
 .ozet {
   display: flex;
   justify-content: space-between;
@@ -137,6 +144,7 @@ li {
   height: 2px;
   border-radius: 2px;
 }
+/*ozet bitis*/
 
 /* kampanya css basla*/
 .kampanya-container {
@@ -221,4 +229,140 @@ li {
 .kampanya-card:nth-child(3) .kampanya-daire,
 .kampanya-card:nth-child(3) .kampanya-icerik a {
   background: #48706e;
+}
+
+/* kampanya css bitis*/
+
+/* İletişim sayfası Css*/
+
+.arka-plan {
+  background-image: url(/image/iletisim_arka.jpg);
+  text-align: center;
+}
+.container {
+  margin-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 0.5%;
+  padding: 2%;
+}
+.baslik h1 {
+  margin-top: 15%;
+  text-align: center;
+  text-shadow: 10px 5px 5px #131a19;
+  font-size: 3em;
+  color: #fff;
+  font-weight: bold;
+}
+/*Form css baslangıc*/
+.form-ic {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 0.5%;
+  padding: 2%;
+  background-color: #fff;
+  text-align: center;
+  background: #013541;
+  border-radius: 2%;
+}
+.form input {
+  border-radius: 5px;
+  border: 2px solid #013541;
+  padding: 10px;
+  margin: 10px;
+  width: 50%;
+  font-size: 1.2em;
+  color: #013541;
+}
+.form textarea {
+  border-radius: 2%;
+  border: 1px solid #013541;
+  padding: 10px;
+  margin: 10px;
+  width: 50%;
+  font-size: 1.2em;
+  color: #013541;
+}
+.btn_gonder {
+  background: transparent;
+  color: #3bd9d9;
+  font-weight: 400;
+  font-size: 24px;
+  text-transform: uppercase;
+  padding: 16px 36px;
+  border: 2px solid #3bd9d9;
+  border-radius: 32px;
+  transform: translate(0);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.btn_gonder::before {
+  content: "";
+  position: absolute;
+  background: #3bd9d9;
+  width: 8px;
+  top: 0;
+  bottom: 0;
+  left: -32px;
+  transform: rotate(-16deg);
+  filter: blur(6px);
+}
+
+.btn_gonder:hover::before {
+  left: calc(100% + 32px);
+  transition: 0.75s;
+}
+/*Form css bitis*/
+
+/*hakkinda css baslangıc*/
+
+.container-hakkinda-img {
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: block;
+}
+.hakkinda-icerik span {
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: bolder;
+  text-shadow: 10px 5px 5px #131a19;
+}
+.hakkinda-icerik {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 0.5%;
+  padding: 2%;
+  background-color: #fff;
+  text-align: center;
+  background: #013541;
+  border-radius: 2%;
+}
+.hakkinda-icerik p {
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bolder;
+  text-shadow: 10px 5px 5px #131a19;
+}
+.hakkinda-icerik b {
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bolder;
+  text-shadow: 10px 5px 5px #131a19;
+}
+.container-hakkinda-bilgiler {
+  background-color: aquamarine;
+  width: 500px;
+  height: 500px;
+  margin: auto;
+}
+.container-hakkinda-bilgiler i {
+  font-size: large;
+  font-weight: bold;
+  text-align: left;
 }
