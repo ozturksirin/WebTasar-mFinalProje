@@ -12,7 +12,7 @@ function carousel() {
     slideIndex = 1;
   }
   x[slideIndex - 1].style.display = "block";
-  setTimeout(carousel, 6000);
+  setTimeout(carousel, 4000);
 }
 
 let docTitle = document.title;

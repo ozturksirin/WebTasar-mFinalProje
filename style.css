@@ -4,7 +4,7 @@
 }
 body {
   /* body css*/
-  background-color: #fbfbfb;
+  background-color: #d1d0d0;
 }
 /* gri arka plan ve dolgu */
 .header {
@@ -121,16 +121,24 @@ li {
   display: flex;
   justify-content: space-between;
   background-color: #d2d2d2;
+  padding: 15px;
 }
 .container-ozet {
   margin: auto;
   text-align: center;
   width: 100%;
 }
+.img-container-ozet {
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+}
 .yazi-ozet p {
   width: 500px;
   overflow: hidden;
   text-overflow: ellipsis;
+  padding: 15px;
+  margin-left: 30px;
 }
 
 .baslik-ozet {
@@ -321,17 +329,28 @@ li {
   color: #fff;
   border-color: #fff;
 }
-
-/*Form css bitis*/
+.container-harita {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 0.5%;
+  padding: 3px;
+  background-color: #fff;
+  text-align: center;
+  background: #013541;
+  border-radius: 5px;
+}
+/*iletisim css bitis*/
 
 /*hakkinda css baslangıc*/
 
-.container-hakkinda-img {
-  text-align: center;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  display: block;
+.container-hakkinda-img img {
+  width: 100%;
+  height: 15%;
+  object-fit: contain;
 }
+
 .hakkinda-icerik span {
   color: #fff;
   font-size: 1.5em;
@@ -339,8 +358,8 @@ li {
   text-shadow: 10px 5px 5px #131a19;
 }
 .hakkinda-icerik {
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-top: 0.2%;
+  margin-bottom: 1%;
   margin-left: 5%;
   margin-right: 5%;
   border-radius: 0.5%;
@@ -371,6 +390,10 @@ li {
   font-weight: bold;
   text-align: left;
 }
+.video {
+  margin-top: 5%;
+}
+
 /*hakkinda css bitis*/
 
 /*galeri css baslangıc*/
@@ -426,8 +449,9 @@ li {
 }
 
 .galeri-card {
-  width: auto;
+  width: 80%;
   height: auto;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   margin-top: 2%;
@@ -440,5 +464,60 @@ li {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   transition: 0.5s;
 }
+.galeri-card :hover {
+  transform: scale(1.3);
+  transition: 0.5s;
+
+  cursor: pointer;
+}
 
 /*galeri css bitis*/
+
+/* haber css baslangıc*/
+
+.haber-container {
+  margin-top: 5%;
+}
+.haber-img img {
+  height: 400px;
+  width: 400px;
+  padding: 5px;
+  border-radius: 6%;
+  float: left;
+  object-fit: cover;
+}
+.haber-img img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.haber-icerik {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.haber-icerik p {
+  padding: 15px;
+}
+
+.haber-img-sag img {
+  height: 400px;
+  width: 400px;
+  padding: 5px;
+  border-radius: 6%;
+  float: right;
+  object-fit: cover;
+}
+.haber-img-sag img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.haber-icerik-sag {
+  text-align: center;
+  padding: 50px 0;
+}
+.haber-icerik-sag p {
+  padding: 15px;
+}
+
+/* haber css bitis*/
