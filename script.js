@@ -14,3 +14,11 @@ function carousel() {
   x[slideIndex - 1].style.display = "block";
   setTimeout(carousel, 6000);
 }
+
+let docTitle = document.title;
+window.addEventListener("blur", () => {
+  document.title = "Tırlar Tükeniyorr!";
+});
+window.addEventListener("focus", () => {
+  document.title = docTitle;
+});
