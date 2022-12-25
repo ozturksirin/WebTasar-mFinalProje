@@ -521,3 +521,73 @@ li {
 }
 
 /* haber css bitis*/
+
+/* tanitim css baslangıc*/
+.container-ust-resim {
+  padding: 5px;
+}
+.aciklama-container {
+  margin-top: 4px;
+}
+.ust-resim {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+.ust-resim img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  padding: 2px;
+}
+.misyon-container {
+  margin-top: 4px;
+  text-align: center;
+}
+.misyon-container li:before {
+  content: "*";
+  position: relative;
+}
+.misyon-container li {
+  padding-top: 10px;
+  font-size: x-large;
+}
+.misyon-liste {
+  padding: 15px;
+  width: 30%;
+  margin: auto;
+}
+.vizyon p {
+  font-size: x-large;
+  font-weight: bold;
+  padding: 15px;
+}
+.kurumsal-img {
+  justify-content: space-between;
+}
+.kurumsal-img img {
+  object-fit: cover;
+  margin-left: 5px;
+  width: 80%;
+  height: 70%;
+}
+.kurumsal-img img:hover {
+  transform: scale(1.5);
+  transition: 0.5s;
+}
+.kurumsal-container-ic {
+  justify-content: space-between;
+  display: flex;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.kurumsal-baslik {
+  margin-left: 34px;
+  margin-bottom: 20px;
+  font-size: x-large;
+}
+/* tanitim css bitis*/
