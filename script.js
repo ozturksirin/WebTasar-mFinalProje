@@ -15,10 +15,10 @@ function carousel() {
   setTimeout(carousel, 4000);
 }
 
-let docTitle = document.title;
+let dokBaslik = document.title;
 window.addEventListener("blur", () => {
   document.title = "Tırlar Tükeniyorr!";
 });
 window.addEventListener("focus", () => {
-  document.title = docTitle;
+  document.title = dokBaslik;
 });

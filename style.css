@@ -591,3 +591,90 @@ li {
   font-size: x-large;
 }
 /* tanitim css bitis*/
+
+/* etik css baslangıc*/
+
+.container-etik-ic {
+  display: flex;
+  margin-top: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding: 15px;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.container-etik-aciklama {
+  margin-left: 5%;
+  padding: 15px;
+}
+/* etik css bitis*/
+
+/* sirket css baslangıc*/
+.container-sirket-ic {
+  display: flex;
+  margin-top: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.container-sirket-aciklama h1 {
+  margin-left: 5%;
+  padding: 10px;
+}
+.container-sirket-aciklama p {
+  margin-left: 5%;
+  padding: 10px;
+}
+/* sirket css bitis*/
+/*Tarihce css baslangıc*/
+.container-tarihce-ic {
+  display: flex;
+  margin-top: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding: 15px;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.container-tarihce-aciklama {
+  margin-left: 5%;
+  padding: 15px;
+}
+.container-tarihce-img img {
+  margin-top: 34px;
+}
+/*Tarihce css bitis*/
+/* Referans css baslangıc*/
+.ust-referans {
+  margin: auto;
+  text-align: center;
+  background: #013541;
+}
+.referans-baslik h1 {
+  color: rgb(199, 198, 198);
+  padding: 200px;
+  font-size: 100px;
+}
+.referans-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+  padding: 25px;
+}
+.referans-img img {
+  padding: 5px;
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+  width: 80%;
+  height: 80%;
+}
+
+.referans-img img:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
+  opacity: 0.5;
+}
+
+/* Referans css bitis*/
