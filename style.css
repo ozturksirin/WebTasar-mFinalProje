@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
 }
 body {
   /* body css*/
@@ -20,7 +21,7 @@ body {
 /* başlık stilleri */
 .header a {
   float: left;
-  color: black;
+  color: #fff;
   text-align: center;
   padding: 12px;
   text-decoration: none;
@@ -101,11 +102,13 @@ body {
   width: 100%;
   background-color: rgb(48, 65, 65);
   color: white;
-  text-align: center;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   font-size: larger;
+}
+.sag-footer h2 {
+  margin-top: 10px;
 }
 
 li {
@@ -116,42 +119,47 @@ li {
   color: #fbfbfb;
   font-size: 22px;
 }
+
 /*ozet basla*/
-.ozet {
-  display: flex;
-  justify-content: space-between;
-  background-color: #d2d2d2;
-  padding: 15px;
-}
-.container-ozet {
-  margin: auto;
-  text-align: center;
+.hizmetler-container {
   width: 100%;
-}
-.img-container-ozet {
   justify-content: center;
   align-items: center;
-  object-fit: contain;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.baslik-ozet {
+  display: inline-block;
+}
+.ozet {
+  width: calc(100% / 1.2);
+  display: flex;
+  justify-content: space-evenly;
+}
+.container-ozet {
+  max-width: 250px;
+  width: 100%;
+}
+.yazi-ozet {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #000;
+}
+.yazi-ozet h2 {
+  height: 100px;
 }
 .yazi-ozet p {
-  width: 500px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  padding: 15px;
-  margin-left: 30px;
+  margin: 10px 0;
+  text-align: start;
 }
-
-.baslik-ozet {
-  margin-top: -15px;
-  font-size: 20px;
+.img-container-ozet {
   text-align: center;
-  background-color: #d2d2d2;
 }
-.baslik-ozet hr {
-  width: 25%;
-  margin-left: 38%;
-  height: 2px;
-  border-radius: 2px;
+.ozet .img-container-ozet img {
+  width: 100%;
+  max-width: 200px;
 }
 /*ozet bitis*/
 
@@ -391,7 +399,7 @@ li {
   text-align: left;
 }
 .video {
-  margin-top: 5%;
+  margin: 5% 0;
 }
 
 /*hakkinda css bitis*/
@@ -406,12 +414,12 @@ li {
 .galeri-baslik h1 {
   position: absolute;
   color: #fff;
-  font-size: 10rem;
+  font-size: 6em;
   transform: translate(-50%, -50%);
 }
 .galeri-baslik h1:nth-child(1) {
   color: transparent;
-  -webkit-text-stroke: 0.3px #3bd9d9;
+  -webkit-text-stroke: 3px #060606;
 }
 .galeri-baslik h1:nth-child(2) {
   color: rgb(11, 64, 108);
@@ -676,5 +684,39 @@ li {
   transition: 0.5s;
   opacity: 0.5;
 }
-
 /* Referans css bitis*/
+@media screen and (max-width: 380px) {
+  .hizmetler-container {
+    flex-direction: column;
+  }
+  .sliderResim {
+    margin-top: 0;
+  }
+  .hizmetler-container .ozet {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .hizmetler-container-footer {
+    margin: 10px 0;
+  }
+  .sag-footer {
+    margin: 0 0 10px 0;
+  }
+  .sag-footer h2 {
+    margin: 0;
+  }
+  .iletisim-container-footer h2 {
+    margin-top: 10px;
+  }
+  .header {
+    position: relative;
+  }
+}
