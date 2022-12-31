@@ -718,5 +718,47 @@ li {
   }
   .header {
     position: relative;
+
+    width: 94.7%;
+  }
+
+  .galeri-baslik {
+    margin-top: 10%;
+  }
+
+  .galeri-card {
+    margin-top: 5%;
+    flex-direction: column-reverse;
+
+    align-items: center;
+  }
+  .galeri-card :hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+  }
+
+  .referans-baslik h1 {
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+  }
+  .haber-img img {
+    width: 97.5%;
+    height: 100%;
+  }
+  .haber-img img:hover {
+    transform: scale(1);
+    transition: 0.5s;
+  }
+  .haber-img-sag {
+    margin-top: 10%;
+  }
+  .haber-img-sag img {
+    width: 97.5%;
+    height: 100%;
+  }
+  .haber-img-sag img:hover {
+    transform: scale(1);
+    transition: 0.5s;
   }
 }
