@@ -119,6 +119,10 @@ li {
   color: #fbfbfb;
   font-size: 22px;
 }
+.Haklar {
+  margin-top: 10px;
+  font-size: 25px;
+}
 
 /*ozet basla*/
 .hizmetler-container {
@@ -172,7 +176,7 @@ li {
   align-items: center;
   flex-wrap: wrap;
   /*background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);*/
-  background-image: url(/image/arkaplan_card.jpg);
+  background-image: url(./image/arkaplan_card.jpg);
 }
 
 .kampanya-card {
@@ -253,7 +257,7 @@ li {
 /* İletişim sayfası Css*/
 
 .arka-plan {
-  background-image: url(/image/iletisim_arka.jpg);
+  background-image: url(./image/iletisim_arka.jpg);
   text-align: center;
 }
 .container {
@@ -760,5 +764,40 @@ li {
   .haber-img-sag img:hover {
     transform: scale(1);
     transition: 0.5s;
+  }
+
+  .misyon-liste {
+    width: 87%;
+  }
+
+  .kurumsal-container-ic {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-etik-img img {
+    width: 100%;
+  }
+
+  .container-etik-ic {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-sirket-img img {
+    width: 100%;
+  }
+
+  .container-sirket-ic {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-tarihce-img img {
+    width: 100%;
+  }
+
+  .container-tarihce-ic {
+    flex-direction: column;
+    align-items: center;
   }
 }
